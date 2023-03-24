@@ -1,0 +1,157 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #419D67;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+
+  float: none;
+  color: #f2f2f2;
+  vertical-align: middle;
+  text-align: center;
+  padding: 40px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  overflow: hidden;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* ADD FUNCTIONALITY FOR SCROLLABLE TEXTBOX */
+#myInput {
+
+  width: 25%; /* Full-width */
+  font-size: 14px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ffffff; /* Add a grey border */
+  margin-top: 12px; /* Add some space below the input */
+  margin-bottom: 12px; /* Add some space below the input */
+
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+
+  height:75%;
+  width: 25%;
+  background-color: #ffffff;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px 0px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 14px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  width: 99%; /* Full-width */
+  text-indent: 40px;
+
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+/* ADD Display for specific roads */
+.roadName{
+
+  font-size: 25px; /* Increase font-size */
+  text-align: center;
+  color: #f2f2f2;
+  border: 5px solid #419d67; /* Add a grey border */
+  background-color: #419D67;
+  position: absolute;
+  left: 26%;
+  top: 71px;
+  height: 30px;
+  width: 400px;
+}
+.roadName p{
+  position: relative;
+  bottom: 23px;
+}
+
+.reviewsTitle{
+
+  font-size: 25px; /* Increase font-size */
+  text-align: center;
+  color: #f2f2f2;
+  border: 5px solid #419d67; /* Add a grey border */
+  background-color: #419D67;
+  position: relative;
+  left: 415px;
+  top: -83px;
+  height: 30px;
+  width: 400px;
+}
+
+/*add reviews list*/
+
+.newUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  position: relative;
+  left: 415px;
+  top: -83px;
+  height: 500px;
+  width: 410px;
+  background-color: #ffffff;
+}
+
+.newUL li p {
+  border: 1px solid #000000; /* Add a border to all links */
+  margin-top: 0px; /* Prevent double borders */
+  background-color: #ffffff; /* Grey background color */
+  padding: 10px 10px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 14px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  width: 94%; /* Full-width */
+  text-indent: 0px;
+  top: 0px;
+  overflow-wrap: break-word;
+  text-align: left;
+
+}
+
+.star_settings {
+  display: flex;
+}
+
+
+.star_settings > img {
+  flex: 0 0 auto;
+  width: 2em;
+
+
+}
+
+
+

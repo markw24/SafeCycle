@@ -1,0 +1,35 @@
+{%load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- THIS GETS CSS STYLE SHEET !-->
+    <script src="{% static 'scripts.js' %}"></script>
+</head>
+
+<!-- THIS SETS BACKGROUND COLOUR !-->
+<html>
+<head>
+   <style>
+      body {
+         background-color: rgb(208, 219, 212);
+      }
+   </style>
+   <!--<h1>HTML Articles</h1>!-->
+</head>
+<body>
+</body>
+</html>
+
+<!-- THIS CREATES TOP NAVIGATION BAR !-->
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> <!-- THIS GETS CSS STYLE SHEET !-->
+    <div class="topnav">
+      <a class="NavOption"
+         href="{%url 'home'%}">Home</a>
+      <a href="{%url 'map'%}">Kingston Map</a>
+      <a href="{%url 'reviews_home'%}">Reviews</a>
+      <a href="{%url 'safety'%}">Safety Laws</a>
+</div>
+</head>
+
+
+{%block content%}
+{%endblock%}

@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+{%block content%}
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search and click on wanted road...">
+
+<ul id="myUL">
+  {%for road in roads %}
+      <li><a href="{%url 'reviews_detail' road.id %}">{{road.name}}
+
+      </a></li>
+    {% endfor %}
+</ul>
+{%block specific%}
+
+{%endblock%}
+{%endblock%}
+
+
+
